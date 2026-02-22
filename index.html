@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Mistbot</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            900: '#1e3a8a',
+                            950: '#172554',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+            color: #cbd5e1; /* slate-300 */
+        }
+
+        .prose {
+            --tw-prose-body: #94a3b8;
+            --tw-prose-headings: #f8fafc;
+            --tw-prose-links: #60a5fa;
+            --tw-prose-bold: #f1f5f9;
+            --tw-prose-counters: #475569;
+            --tw-prose-bullets: #475569;
+            --tw-prose-hr: #334155;
+            --tw-prose-quotes: #e2e8f0;
+            --tw-prose-quote-borders: #3b82f6;
+            --tw-prose-captions: #64748b;
+            --tw-prose-code: #e2e8f0;
+            --tw-prose-pre-code: #e2e8f0;
+            --tw-prose-pre-bg: #1e293b;
+            --tw-prose-th-borders: #334155;
+            --tw-prose-td-borders: #1e293b;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-white flex flex-col min-h-screen">
+
+    <nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-slate-900/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <span class="font-semibold text-white text-lg tracking-wide">Mistbot</span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Home</a>
+                    <a href="https://discord.gg/tgzEMgBbYW" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-brand-400 hover:text-brand-300 transition-colors">Support Server</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row gap-12 w-full">
+
+        <aside class="hidden md:block w-64 shrink-0 relative">
+            <div class="sticky top-28 space-y-1 pr-4 border-r border-slate-800">
+                <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">Contents</h3>
+                <a href="#acceptance" class="block py-2 text-sm text-slate-400 hover:text-brand-400 transition-colors">1. Acceptance</a>
+                <a href="#description" class="block py-2 text-sm text-slate-400 hover:text-brand-400 transition-colors">2. Service Description</a>
+                <a href="#eligibility" class="block py-2 text-sm text-slate-400 hover:text-brand-400 transition-colors">3. Eligibility</a>
+                <a href="#conduct" class="block py-2 text-sm text-slate-400 hover:text-brand-400 transition-colors">4. User Conduct</a>
+                <a href="#marketplace" class="block py-2 text-sm text-slate-400 hover:text-brand-400 transition-colors">5. Marketplace</a>
+                <a href="#vouch" class="block py-2 text-sm text-slate-400 hover:text-brand-400 transition-colors">6. Vouch System</a>
+                <a href="#ai" class="block py-2 text-sm text-slate-400 hover:text-brand-400 transition-colors">7. AI Features</a>
+                <a href="#security" class="block py-2 text-sm text-slate-400 hover:text-brand-400 transition-colors">8. Security</a>
+                <a href="#admin" class="block py-2 text-sm text-slate-400 hover:text-brand-400 transition-colors">9. Admin Duties</a>
+                <a href="#ip" class="block py-2 text-sm text-slate-400 hover:text-brand-400 transition-colors">10. Intellectual Property</a>
+                <a href="#disclaimer" class="block py-2 text-sm text-slate-400 hover:text-brand-400 transition-colors">11. Disclaimer</a>
+                <a href="#liability" class="block py-2 text-sm text-slate-400 hover:text-brand-400 transition-colors">12. Liability</a>
+                <a href="#termination" class="block py-2 text-sm text-slate-400 hover:text-brand-400 transition-colors">13. Termination</a>
+                <a href="#contact" class="block py-2 text-sm text-slate-400 hover:text-brand-400 transition-colors">16. Contact</a>
+            </div>
+        </aside>
+
+        <article class="prose prose-invert max-w-3xl w-full">
+            <header class="mb-10 pb-10 border-b border-slate-800">
+                <h1 class="text-4xl font-bold tracking-tight text-white mb-4">Terms of Service</h1>
+                <p class="text-sm text-slate-400"><strong>Last Updated:</strong> February 22, 2026</p>
+                <div class="mt-8 p-4 bg-brand-950/30 border border-brand-900 rounded-lg text-brand-100 text-sm leading-relaxed">
+                    By using Mistbot, you agree to these terms. Please read them carefully to understand your rights and responsibilities within the Mistbot ecosystem.
+                </div>
+            </header>
+
+            <section id="acceptance" class="scroll-mt-28">
+                <h2>1. Acceptance of Terms</h2>
+                <p>By adding Mistbot to your Discord server or interacting with Mistbot in any server, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the bot.</p>
+            </section>
+
+            <section id="description" class="scroll-mt-28 mt-12">
+                <h2>2. Description of Service</h2>
+                <p>Mistbot is a Discord bot built for the <strong>Attack on Titan: Revolution</strong> (Roblox) community. It provides the following services:</p>
+                <ul>
+                    <li><strong>Vouch & Carrier Tracking</strong> — Log and display carries, leaderboards, and profiles.</li>
+                    <li><strong>Marketplace</strong> — Create, search, and manage in-game trade listings with a cross-server global feed.</li>
+                    <li><strong>Lobby System</strong> — Host and manage game lobbies with private channels and participant tracking.</li>
+                    <li><strong>AI Assistant</strong> — Answer game-related questions using AI-powered wiki search.</li>
+                    <li><strong>Mist-Connect</strong> — Automatically detect trade intent from messages in designated channels.</li>
+                    <li><strong>Security</strong> — Scam reporting, blacklisting, and appeal systems.</li>
+                    <li><strong>Values Lookup</strong> — Check in-game item values and compare trades.</li>
+                </ul>
+            </section>
+
+            <section id="eligibility" class="scroll-mt-28 mt-12">
+                <h2>3. Eligibility</h2>
+                <ul>
+                    <li>You must meet Discord's minimum age requirements (typically 13 years old or older) to use Mistbot.</li>
+                    <li>You must have a valid Discord account in good standing.</li>
+                </ul>
+            </section>
+
+            <section id="conduct" class="scroll-mt-28 mt-12">
+                <h2>4. User Conduct</h2>
+                <p>By using Mistbot, you agree <strong>not</strong> to:</p>
+                <ul>
+                    <li><strong>Abuse the bot:</strong> Spam commands, exploit bugs, or attempt to crash or disrupt the service.</li>
+                    <li><strong>Submit false information:</strong> File fake scam reports, submit fraudulent vouches, or post misleading marketplace listings.</li>
+                    <li><strong>Harass others:</strong> Use any Mistbot feature to harass, threaten, or target other users.</li>
+                    <li><strong>Circumvent restrictions:</strong> Use alternate accounts to bypass blacklists, cooldowns, or rate limits.</li>
+                    <li><strong>Reverse-engineer:</strong> Attempt to decompile or extract the bot's source code without permission.</li>
+                    <li><strong>Automate interactions:</strong> Use self-bots, macros, or scripts to interact with Mistbot.</li>
+                </ul>
+            </section>
+
+            <section id="marketplace" class="scroll-mt-28 mt-12">
+                <h2>5. Marketplace Rules</h2>
+                <ul>
+                    <li>Listings must be for legitimate in-game items in Attack on Titan: Revolution.</li>
+                    <li><strong>Real-money trading (RMT) is strictly prohibited.</strong> Do not list or solicit real currency or external goods.</li>
+                    <li>Listings automatically expire after <strong>6 hours</strong>; you may bump them within applicable cooldowns.</li>
+                    <li>Mistbot is a listing platform only. We do not facilitate, guarantee, or mediate trades. All trades are conducted at your own risk.</li>
+                </ul>
+            </section>
+
+            <section id="vouch" class="scroll-mt-28 mt-12">
+                <h2>6. Vouch System</h2>
+                <ul>
+                    <li>Vouches represent endorsements and must reflect genuine experiences.</li>
+                    <li>Server administrators may manage vouches at their discretion.</li>
+                    <li>Artificially inflating vouch counts is prohibited and may result in a reset or blacklist.</li>
+                </ul>
+            </section>
+
+            <section id="ai" class="scroll-mt-28 mt-12">
+                <h2>7. AI Features</h2>
+                <p>AI responses are generated automatically and may contain inaccuracies. Mistbot does not guarantee the accuracy of AI-generated content. AI features are subject to rate limits to ensure fair usage.</p>
+            </section>
+
+            <section id="security" class="scroll-mt-28 mt-12">
+                <h2>8. Security & Blacklist System</h2>
+                <ul>
+                    <li>Mistbot maintains a <strong>global blacklist</strong> shared across all servers using the bot.</li>
+                    <li>Users may be blacklisted for scamming, abuse, or violation of these Terms.</li>
+                    <li>Appeals can be submitted via the <code>,appeal</code> command (10-day cooldown).</li>
+                    <li>Staff decisions on reports, blacklists, and appeals are final.</li>
+                </ul>
+            </section>
+
+            <section id="admin" class="scroll-mt-28 mt-12">
+                <h2>9. Server Administrator Responsibilities</h2>
+                <p>Administrators agree to configure the bot responsibly using the <code>/setup-mist</code> wizard and not use administrative features (vouch management, blacklisting) in bad faith.</p>
+            </section>
+
+            <section id="ip" class="scroll-mt-28 mt-12">
+                <h2>10. Intellectual Property</h2>
+                <p>Mistbot branding and code are property of the development team. Attack on Titan: Revolution is property of its respective developers; Mistbot is an independent community tool.</p>
+            </section>
+
+            <section id="disclaimer" class="scroll-mt-28 mt-12">
+                <h2>11. Disclaimer of Warranties</h2>
+                <p>Mistbot is provided <strong>"as is"</strong>. We do not guarantee uninterrupted operation, accuracy of AI responses, or the legitimacy of trades conducted by users.</p>
+            </section>
+
+            <section id="liability" class="scroll-mt-28 mt-12">
+                <h2>12. Limitation of Liability</h2>
+                <p>To the fullest extent permitted by law, Mistbot and its developers shall not be liable for loss of in-game items, currency, or damages caused by inaccurate AI responses or third-party interactions.</p>
+            </section>
+
+            <section id="termination" class="scroll-mt-28 mt-12">
+                <h2>13. Termination</h2>
+                <p>We reserve the right to restrict or terminate access for any user or server violating these Terms. Configuration is retained upon bot removal but can be deleted upon request.</p>
+            </section>
+
+            <section id="contact" class="scroll-mt-28 mt-12 mb-20">
+                <h2>16. Contact</h2>
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 space-y-4">
+                    <p class="mb-0">Questions regarding these Terms? Get in touch:</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://discord.com/invite/tgzEMgBbYW" class="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-brand-600 hover:bg-brand-500 text-white font-semibold transition-colors shadow-sm">
+                            Support Server
+                        </a>
+                        <a href="https://itamar11-idk.github.io/mistbot-privacyPolicy/" class="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-slate-700 hover:bg-slate-600 text-white font-semibold transition-colors shadow-sm">
+                            Privacy Policy
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="bg-slate-900 border-t border-slate-800 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <span class="text-slate-400 text-sm">© 2026 Mistbot. All rights reserved.</span>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-slate-500 hover:text-slate-300 text-sm transition-colors">Terms of Service</a>
+                <a href="https://discord.com/invite/tgzEMgBbYW" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-slate-300 text-sm transition-colors">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll spy for sidebar
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('aside a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.pageYOffset >= sectionTop - 120) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-brand-400', 'font-medium');
+                link.classList.add('text-slate-400');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('text-brand-400', 'font-medium');
+                    link.classList.remove('text-slate-400');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
